@@ -34,6 +34,8 @@ Then the server is running on localhost:61112
 {
     "lol": 1   //whatever u wanna sent
     "audio_name": "name" //name
-    "audio_data": "audio.silk" //file
+    "audio_data": "audio.silk" //silk file (Wehcat , Skype)
 }
 '
+
+** More audio formats will be supported
