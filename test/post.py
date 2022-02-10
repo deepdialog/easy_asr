@@ -2,7 +2,7 @@ import base64
 import requests
 import json
 
-audio = open('/storage/lol/chatbot_api/fastapi/Juzibot_asr/test/input.slk', 'rb')  # open binary file in read mode
+audio = open('input.slk', 'rb')  # open binary file in read mode
 audio_read = audio.read()
 audio_encode = base64.encodestring(audio_read)
 
