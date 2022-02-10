@@ -30,6 +30,6 @@ Then the server is running on localhost:61112
 ## Server test
 
 - curl -X GET "127.0.0.1:61111//api/audio"
-- POST method need a ".silk" like file , we can try via  python3 test/post.py
+- POST method need a ".silk" like file , we can try via  python3 test/post.py or node test/post.js
 
 ** More audio formats will be supported
