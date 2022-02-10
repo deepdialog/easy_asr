@@ -32,9 +32,9 @@ Then the server is running on localhost:61112
 - curl -X GET "127.0.0.1:61111//api/audio"
 - curl -X POST -k "127.0.0.1:61111/api/audio/" -H 'Content-Type: application/json' -d'
 {
-    "lol": 1   //whatever u wanna sent
-    "audio_name": "name" //name
-    "audio_data": "audio.silk" //silk file (Wehcat , Skype)
+    "lol": 1  
+    "audio_name": "name" 
+    "audio_data": "audio.silk" 
 }
 '
 
