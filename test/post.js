@@ -5,7 +5,6 @@ const url = 'http://0.0.0.0:61112'
 
 const body = {
     audio_name: 'input.slk',
-    lol: '1',
     audio_data: "data:audio/silk;base64," + fs.readFileSync('input.slk', 'base64')
 };
 const response = await fetch(url + '/api/audio/', {

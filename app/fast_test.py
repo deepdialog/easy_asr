@@ -16,7 +16,6 @@ async def audio_help():
     return "send_audio"
 
 class Item_audio(BaseModel):
-    lol: Optional[str] = None
     audio_name: Optional[str] = None
     audio_data: Optional[str] = None
 
@@ -26,7 +25,7 @@ async def create_item(item: Item_audio):
     gg=item.audio_data.replace("data:audio/silk;base64,","")
     print(gg)
     audio_data = base64.b64decode(str(gg))
-    # dir = "./"+item.audio_name.replace("slk","")
+    
     dir = item.audio_name.replace("slk","")
     fout = open((dir+"silk"),'wb')
     fout.write(audio_data)

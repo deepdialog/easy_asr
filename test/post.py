@@ -8,7 +8,6 @@ audio_encode = base64.encodestring(audio_read)
 
 url = 'http://127.0.0.1:61112/api/audio/'
 post_body = {
-    'lol': "1",
     'audio_name': "input.slk",  # wechat audio is end up with .slk
     'audio_data':  "data:audio/silk;base64,"+audio_encode.decode()
 }
