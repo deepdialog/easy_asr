@@ -11,7 +11,13 @@
 
 ### Way 1 Docker 
 
-Simply copy code below
+Build image by yourself
+```bash
+docker build -t easy_asr .
+docker run -d -p 61111:81 easy_asr
+```
+
+Or just simply copy code below
 ```
 docker run -d -p 61111:81 tianrking/fastapi_asr:v0.2
 ```
@@ -33,3 +39,6 @@ Then the server is running on localhost:61112
 - POST method need a ".slk" like file ( wechat audio type ) , I build a demo in test directory just python3 post.py or node post.js
 
 ** More audio formats will be supported
+
+
+
